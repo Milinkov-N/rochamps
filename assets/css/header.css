@@ -1,0 +1,103 @@
+/**
+    -------- Topbar header styling --------
+*/
+
+.topbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-block: 1.5rem;
+    transition: .2s all ease-in-out;
+    z-index: 999;
+}
+
+.topbar.sticky {
+    background: var(--clr-accent);
+    padding-block: 1rem;
+    color: #fff;
+}
+
+.topbar.sticky .logo span {
+    color: inherit;
+}
+
+.topbar.sticky .btn.clr-accent {
+    background-color: #fff;
+    color: var(--clr-accent);
+    transition: .2s all ease-in-out;
+}
+
+.topbar.sticky .nav-element:hover {
+    color: #fff;
+}
+
+.topbar.sticky .nav-element:hover::after {
+transform: scaleX(1);
+}
+
+.topbar .wrapper {
+    --wrapper-width: 1600px;
+}
+
+.topbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.topbar-nav ul {
+    margin-right: 3rem;
+}
+
+.topbar-nav ul li + li {
+    margin-left: 1.25rem;
+}
+
+.nav-element {
+    position: relative;
+    font-weight: 500;
+    transition: .2s color ease-in-out;
+}
+
+.nav-element::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 115%;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: .2s all ease-in-out;
+}
+
+.nav-element:hover {
+    color: var(--clr-accent);
+}
+
+.burger {
+    display: none;
+    position: relative;
+    height: 1em;
+    width: .875em;
+    font-size: 1.5rem;
+}
+
+.burger:hover {
+    transform: unset;
+    box-shadow: unset;
+}
+
+.burger > * {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .2s opacity ease;
+}
+
+.op-1 {
+    opacity: 1;
+}

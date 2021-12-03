@@ -1,0 +1,61 @@
+/**
+    -------- Footer styling --------
+*/
+
+.footer {
+    background: var(--neutral-700);
+    color: #e0e0e0;
+    padding-block: 2rem;
+}
+
+.footer .main-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: unset;
+    margin-bottom: 2rem;
+}
+
+.logo-block {
+    color: #fff;
+}
+
+.content-block {
+    max-width: 15rem;
+}
+
+.content-block .title {
+    font-size: 1.25rem;
+    margin-bottom: 1em;
+    color: #fff;
+}
+
+.link-list {
+    display: flex;
+    flex-direction: column;
+    gap: .75em;
+    font-weight: 300;
+}
+
+.link-list li a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.email-tel {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.footer .bottom-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+    font-weight: 300;
+}
+
+.designed-by a {
+    font-style: italic;
+}

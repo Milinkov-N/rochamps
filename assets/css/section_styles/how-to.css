@@ -1,0 +1,37 @@
+/**
+    -------- How to section styling --------
+*/
+
+.how-to--content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step-image {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.step-counter {
+    font-family: var(--ff-russo-one);
+    font-size: 4.5rem;
+    color: var(--neutral-300);
+}
+
+.step-title {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: var(--neutral-700);
+    margin-bottom: 1em;
+}
+
+.step-description {
+    font-weight: lighter;
+    line-height: 1.75rem;
+}
+
+.step-description a {
+    text-decoration: underline;
+}

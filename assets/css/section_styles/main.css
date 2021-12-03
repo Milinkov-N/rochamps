@@ -1,0 +1,41 @@
+/**
+    -------- Main section styling --------
+*/
+
+.main-section {
+    position: relative;
+    display: flex;
+    min-height: 85vh;
+}
+
+.main-section .wrapper {
+    margin-block: auto;
+    margin-inline: 4.5% 0;
+}
+
+.main-image {
+    position: absolute;
+    top: 3rem;
+    left: 40%;
+    width: auto;
+    height: 90%;
+    transform: rotate(-7deg);
+    z-index: -1;
+}
+
+.main-content {
+    position: relative;
+    max-width: 38rem;
+}
+
+.main-title {
+    text-transform: uppercase;
+    font-size: 2.625rem;
+    margin-bottom: .6em;
+}
+
+.main-subtitle {
+    font-weight: 500;
+    line-height: 1.75em;
+    margin-bottom: 65px;
+} 

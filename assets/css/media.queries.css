@@ -1,0 +1,393 @@
+/**
+    -------- Media queries --------
+*/
+
+@media (max-width: 1540px) {
+    .topbar {
+        color: #fff;
+    }
+
+    .main-section {
+        background-image: url(backgrounds/main-image.jpg);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        color: #fff;
+    }
+
+    .main-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .main-image {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .main-section .wrapper {
+        margin-inline: 0;
+    }
+
+    .about-image {
+        height: 150%;
+    }
+
+    .testimonials {
+        margin-bottom: unset;
+    }
+
+    .testimonials-image {
+        display: none;
+    }
+
+    .testimonials-container {
+        max-width: unset;
+        max-height: unset;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: unset;
+        margin-left: unset
+    }
+
+    .testimonial:not(:nth-last-child(1)) {
+        margin-bottom: unset;
+    }
+}
+
+@media (max-width: 1360px) {
+    .about-image {
+        top: -100px;
+        height: 120%;
+    }
+
+    .team {
+        background-color: var(--neutral-700);
+        color: #fff;
+    }
+
+    .team-image {
+        display: none;
+    }
+
+    .team-container {
+        max-width: unset;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+        margin-inline: 10%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .responsive {
+        position: fixed;
+        top: 0;
+        right: -120%;
+        width: 260px;
+        height: 100vh;
+        background: rgb(52 52 52);
+        flex-direction: column;
+        padding: min(14vh, 8em) 0;
+        transition: .2s right ease-in-out;
+    }
+
+    .responsive.active {
+        right: 0;
+    }
+
+    @supports (backdrop-filter: blur(5px)) {
+        .responsive {
+            background: rgb(52 52 52 / .7);
+            backdrop-filter: blur(5px);
+        }
+    }
+
+    .topbar-nav.responsive .btn.clr-accent {
+        background-color: var(--clr-accent);
+        color: #fff;
+        transition: .2s all ease-in-out;
+    }
+
+    .topbar-nav ul {
+        margin-right: unset;
+    }
+
+    .topbar-nav ul li {
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .topbar-nav ul li + li {
+        margin-left: unset;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .advantages .wrapper {
+        flex-direction: column;
+    }
+
+    .advantages .wrapper .advantage-item + .advantage-item {
+        margin-top: 45px;
+    }
+
+    .advantage-item {
+        max-width: 490px;
+        min-height: unset;
+    }
+
+    .about-us {
+        background-color: var(--neutral-700);
+        color: #fff;
+        margin-bottom: unset;
+    }
+
+    .dark .section-subtitle {
+        color: #fff;
+    }
+
+    .about-title {
+        color: #fff;
+    }
+
+    .about-image {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    .about-wrapper {
+        margin-left: unset;
+    }
+
+    .img-container {
+        display: flex;
+    }
+
+    .pricing .flex {
+        flex-direction: column;
+    }
+
+    .pricing-item + .pricing-item {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .testimonials-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials-container .testimonial + .testimonial {
+        margin-left: unset;
+    }
+
+    .testimonial:not(:nth-last-child(1)) {
+        margin-bottom: 2rem;
+    }
+
+    .team-container {
+        gap: 2rem;
+        margin-inline: unset;
+    }
+
+    .form-container {
+        grid-template-columns: 1fr;
+    }
+
+    .image {
+        height: 375px;
+        order: -1;
+    }
+
+    .footer .main-content {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .main-content {
+        max-width: 31rem;
+    }
+
+    .main-title {
+        font-size: 2rem;
+    }
+
+    .main-subtitle {
+        font-size: 0.85rem;
+        margin-bottom: 45px;
+    }
+
+    .reverse-order {
+        order: unset;
+    }
+
+    .grid {
+        gap: 4rem;
+    }
+    .form-container.grid {
+        gap: unset;
+    } 
+    .form-container .grid {
+        gap: 1rem;
+    }
+
+    .columns-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .step-image {
+        width: 75%;
+    }
+}
+
+@media (max-width: 780px) {
+    .team-container {
+        grid-template-columns: 75%;
+        justify-content: center;
+    }
+
+    .countdown-timer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timer-el + .timer-el {
+        margin-top: .75em;
+    }
+
+    .timer-el .el-value {
+        font-size: 5rem;
+    }
+    
+}
+
+@media (max-width: 680px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+
+    .grid .fname-item {
+        grid-column: unset;
+    }
+
+    .grid .lname-item {
+        grid-column: unset;
+    }
+
+    .grid .number-item {
+        grid-column: unset;
+    }
+
+    .grid .car-item {
+        grid-column: unset;
+    }
+
+    .grid .btn {
+        grid-column: unset;
+    }
+}
+
+@media (max-width: 550px) {
+    .about-image-responsive {
+        width: auto;
+        height: inherit;
+    }
+
+    .team-container {
+        grid-template-columns: 100%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .section-title {
+        font-size: 1.25rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.75rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .wrapper {
+        padding: 0 var(--wrapper-padding-resp);
+    }
+
+    .main-title {
+        font-size: 1.75rem;
+    }
+
+    .advantages {
+        transform: translateY(-25px);
+    }
+
+    .img-container {
+        justify-content: end;
+    }
+
+    .grid {
+        gap: 2rem;
+    }
+
+    .step-image {
+        width: 100%;
+    }
+
+    .step-title {
+        font-size: 1.45rem;
+    }
+
+    .testimonial {
+        padding: 20px 20px;
+    }
+
+    .quote {
+        left: -.4em;
+    }
+
+    .form-container .content {
+        padding: 2rem 1rem;
+    }
+
+    .image {
+        height: 275px;
+    }
+
+    .logo-block .logo {
+        font-size: 2rem;
+    }
+}
+
+@media (max-height: 500px) {
+    .topbar {
+        padding-block: 0.5rem;
+    }
+
+    .main-title {
+        margin-block: 0.6em;
+    }
+
+    .main-subtitle {
+        margin-bottom: 35px;
+    }
+
+    .advantages {
+        transform: translateY(-25px);
+    }
+}

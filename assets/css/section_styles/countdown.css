@@ -1,0 +1,52 @@
+/**
+    -------- Countdown section styling --------
+*/
+
+.countdown {
+    position: relative;
+    background: url(../backgrounds/countdown-bg1.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+}
+
+.countdown::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.countdown .wrapper {
+    position: relative;
+}
+
+.countdown .section-header {
+    margin-bottom: unset;
+}
+
+.countdown .section-subtitle {
+    color: inherit;
+}
+
+.countdown-timer {
+    max-width: 1020px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.75rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.timer-el {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer-el .el-value {
+    font-size: 5rem;
+}

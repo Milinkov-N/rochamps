@@ -1,0 +1,56 @@
+/**
+    -------- About section styling --------
+*/
+
+.about-us {
+    position: relative;
+    margin-bottom: 255px;
+}
+
+.about-wrapper {
+    margin-left: 50%;
+}
+
+.about-image {
+    position: absolute;
+    top: -200px;
+    right: 47%;
+    width: auto;
+    height: 180%;
+    transform: rotate(12deg);
+    z-index: -1;
+}
+
+.about-title {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--neutral-700);
+    margin-bottom: 1em;
+}
+
+.about-title span {
+    color: var(--clr-accent);
+}
+
+.about-content {
+    max-width: 600px;
+    font-weight: lighter;
+    line-height: 1.825rem;
+    margin-bottom: 2rem;
+}
+
+.img-container {
+    display: none;
+    width: 100%;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-block: 3rem;
+    overflow: hidden;
+}
+
+.about-image-responsive {
+    width: inherit;
+}

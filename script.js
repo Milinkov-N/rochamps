@@ -156,4 +156,6 @@ $(document).ready(function(){
 
 })
 
+const countdownEl = document.querySelector('.countdown')
+
 setInterval(countdown, second);
